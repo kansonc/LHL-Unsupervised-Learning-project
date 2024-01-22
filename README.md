@@ -127,24 +127,24 @@ Figure 9: PCA explained variance chart
 ## Project
 
 ### Part 1: EDA
-![Figure 1](visualizations\figure_1_histograms_boxplots_of_quantitative_variables_before_outliers_removed.png)
+![Figure 1](visualizations/figure_1_histograms_boxplots_of_quantitative_variables_before_outliers_removed.png)
 
 With the exception of the categorical variables, all quantitative variables had a skewed distribution to the right.
 
 
-![Figure 3](visualizations\figure_3_scatter_plots_of_column_pairs_before_outliers_removed.png)
+![Figure 3](visualizations/figure_3_scatter_plots_of_column_pairs_before_outliers_removed.png)
 
 It is clear that not many of the variables are correlated
 
 
-![Figure 4](visualizations\figure_4_scatter_plots_of_column_pairs_after_outliers_removed.png)
+![Figure 4](visualizations/figure_4_scatter_plots_of_column_pairs_after_outliers_removed.png)
 
-![correlation_matrix_difference](images\correlation_diff.png)
+![correlation_matrix_difference](images/correlation_diff.png)
 
 After removing 108 records containing outliers, the absolute difference between the correlations did not change much, other than the correlation between "Delicassen" and "Frozen".
 
 
-![Figure 5](visualizations\figure_5_correlation_heatmap.png)
+![Figure 5](visualizations/figure_5_correlation_heatmap.png)
 
 The only columns showing a strong correlation are 'grocery' and 'detergents_paper'; 'grocery' and 'milk'. Therefore, 'grocery' will be dropped.
 
@@ -164,20 +164,20 @@ No PCA was performed as it was included near the end of this project, but would 
 
 
 ### Part 2: KMeans Clustering
-![Figure 6](visualizations\figure_6_elbow_method_chart.png)
-![Figure 7](visualizations\figure_7_silhouette_analysis_chart.png)
+![Figure 6](visualizations/figure_6_elbow_method_chart.png)
+![Figure 7](visualizations/figure_7_silhouette_analysis_chart.png)
 
 Both charts lead to a optimal number of clusters of 4.  The model achieved convergence and the cluster assignment is as follows:
-![kmeans output](images\kmeans.png)
+![kmeans output](images/kmeans.png)
 
 ### Part 3: Hierarchical Clustering
-![Figure 8](visualizations\figure_8_dendrogram_of_Hierarchical_clustering_ward_method_chart.png)
+![Figure 8](visualizations/figure_8_dendrogram_of_Hierarchical_clustering_ward_method_chart.png)
 
 From the dendrogram, I chose the t value of 16 for the AgglomerativeClustering model.  This also had a number of clusters of 4, same as kmeans.
 
 
 ### Part 4: PCA
-![Figure 9](visualizations\Figure_9__PCA_explained_variance_chart.png)
+![Figure 9](visualizations/Figure_9__PCA_explained_variance_chart.png)
 
 If I were to do the model again, I would chose to either use only 3 (containing 81% of explained variance) or 4 (containing 94% of explained variance) principle components as model features.
 
