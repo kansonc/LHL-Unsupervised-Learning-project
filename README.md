@@ -107,6 +107,7 @@ Figure 4.9: "Scatter Plot of Grocery vs Frozen after outliers removed"
 Figure 4.10: "Scatter Plot of Grocery vs Detergents_Paper after outliers removed"
 
 Figure 4.11: "Scatter Plot of Grocery vs Delicassen after outliers removed"
+
 Figure 4.12: "Scatter Plot of Frozen vs Detergents_Paper after outliers removed"
 
 Figure 4.13: "Scatter Plot of Frozen vs Delicassen after outliers removed"
